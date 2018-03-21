@@ -1,0 +1,11 @@
+Emergency Patch:
+An empty value in a numeric variable attribute was causing an abort.
+The FileChecker was corrected to catch this situation and reject the file.
+
+
+
+ArgoDataFile.java
+=================
+Patch code that was causing an abort when attempting to convert
+an "empty attribute" to a numeric value
+

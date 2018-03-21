@@ -1,0 +1,59 @@
+Notes on the code modifications in the 2015-12-xx distribution
+==============================================================
+
+Summary
+-------
+
+"Data check" bio-profile files
+Add check of DATA_STATE_INDICATOR value for real-time files (not "2C*")
+Check JULD_QC before doing JULD checks
+Check and handle PARAMETER_DATA_MODE
+Add DATE_* checks for pre-3.1 files (not "data checked")
+Turn on warnings for invalid (but currently accepted) DATA_TYPE
+
+
+Detailed
+--------
+
+ValidateSubmit.java
+- enable bio-profile data validation
+- enable DATE_* checks for files that are not "data checked" (pre-3.1)
+
+usgdac/ArgoDataFile.java
+- turn on warnings for invalid (but currently accepted) DATA_TYPE
+- add checks of DATE_CREATION and DATE_UPDATE on files that are not "data checked"
+- add readFloatArr convenience function for float[n,m] variables
+
+usgdac/ArgoFileSpecification.java
+- do not allow <PARAM> do exist by itself for "intermediate" parameters (ADMT-16)
+
+usgdac/ArgoProfileFile.java
+- only call validateDMode for core-files
+- only perform JULD checks if QC is "good"
+- add check of DATA_STATE_INDICATOR for real-time files (not "2C*")
+- add PARAMETER_DATA_MODE check
+- determine "data mode" using both DATA_MODE and PARAMETER_DATA_MODE
+- add ability to do profile checks in bio-profile files
+  - float and double variables
+  - parameter variables with extra dimension
+  - PRES missing QC variables
+- code "clean-up"
+  - use the convenience functions for reading variables
+
+usgdac/ArgoTechnicalFile.java
+- remove vestigle method
+
+usgdac/ArgoVariable.java
+- add N_LEVELS dimension "tracking"
+
+
+DumpProgram
+- continued features
+
+Add ReadArgoVariable program
+
+Add test/TestArgoDate program
+
+Add Dump4Compare program
+- intended to make "file dumps" for comparing with BUFR
+

@@ -1,0 +1,139 @@
+
+//SENSOR_MODEL | COMMENTS | SENSOR | SHORT SENSOR NAME | update date | update comment | Status
+
+UNKNOWN | to use when necessary | any |  |  |  | 
+
+//Conductivity/temperature sensors |  |  |  |  |  | 
+FSI |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+SBE |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+SBE37 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+SBE41 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+SBE41_V2.5 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 27/04/2015 | added by t. carval for a. thresher | 
+SBE41_V2.6 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+SBE41_V3 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+SBE41CP |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+SBE41_IDO_V1.0c | Seabird CTD module with IDO oxygen sensor | "CTD_PRES, CTD_TEMP, CTD_CNDC,IDO_DOXY" | CTD IDO | 2/6/2015 | added b. m. belbeoch for JAMSTEC | 
+SBE41_IDO_V2.0 | Seabird CTD module with IDO oxygen sensor | "CTD_PRES, CTD_TEMP, CTD_CNDC,IDO_DOXY" | CTD IDO | 2/6/2015 |  | 
+SBE41CP_IDO_V2.0b | Seabird CTD module with IDO oxygen sensor | "CTD_PRES, CTD_TEMP, CTD_CNDC,IDO_DOXY" | CTD IDO | 27/04/2015 | added by t. carval for a. thresher | 
+SBE41_IDO_V3.0 | Seabird CTD module with IDO oxygen sensor | "CTD_PRES, CTD_TEMP, CTD_CNDC,IDO_DOXY" | CTD IDO | 3/7/2015 | added by m. belbeoch for JAMSTEC | 
+SBE41CP_V1 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+SBE41CP_V1.1 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 23/04/2015 | added by t. carval for j. gilson | 
+SBE41CP_V1.2 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+SBE41CP_V1.2a |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 27/04/2015 | added by t. carval for a. thresher | 
+SBE41CP_V1.3 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 23/04/2015 | added by t. carval for j. gilson | 
+SBE41CP_V1.3b |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 27/04/2015 | added by t. carval for a. thresher | 
+SBE41CP_V1.4 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 23/04/2015 | added by t. carval for j. gilson | 
+SBE41CP_V1.5 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 23/04/2015 | added by t. carval for j. gilson | 
+SBE41CP_V1.7 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 23/04/2015 | added by t. carval for j. gilson | 
+SBE41CP_V1.8 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 23/04/2015 | added by t. carval for j. gilson | 
+SBE41CP_V1.9 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 23/04/2015 | added by t. carval for j. gilson | 
+SBE41CP_V1.9a |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 8/9/2015 | added by m. belbeoch for JAMSTEC | 
+SBE41CP_V2 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+SBE41CP_V3 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+SBE41CP_V3.0a |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+SBE41CP_V3.0c |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+SBE41CP_V4.4.0 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 17/08/2015 | added by M.B.  for A.Thresher | 
+SBE41CP_V5.0.1 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 17/08/2016 | added by M.B.  for A.Thresher | 
+SBE41CP_V5.3.0 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 21/01/2016 | added by M.B.  for A.Thresher | 
+SBE41CP_V7.2.3 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 18/04/2016 | added by MB for K. Sato | 
+SBE41CP_V7.2.5 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 18/04/2016 | added by MB for K. Sato | 
+SBE61_V4.5.2 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 10/6/2015 | added by t. carval for j. gilson | 
+SBE61_V4.5.3 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 10/6/2015 | added by t. carval for j. gilson | 
+SBE61_V5.0.0 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 23/02/2016 | aded by MB for J. Gilson | 
+SBE61_V5.0.1 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 26/01/2016 | added by M.Scanderbeg for J. Gilson | 
+SBE61 |  | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 26/01/2016 | added by M.Scanderbeg for J. Gilson | 
+SBE61CP | "new deep Argo ""WOCE for life"" CTD" | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD | 10/6/2015 | removed by t. carval for j. gilson | obsolete
+CTD_F01 | TSK model | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+RBR | RBR model | "CTD_PRES, CTD_TEMP, CTD_CNDC" | CTD |  |  | 
+RBRoem_V1.16 |  |  |  |  |  | 
+Oxygen sensors |  |  |  |  |  | 
+SBE43_IDO | Seabird Electrochemical Dissolved Oxygen IDO sensor (volt output) | IDO_DOXY | IDO |  |  | 
+SBE43I | configuration option | IDO_DOXY | IDO |  |  | 
+SBE43F_IDO | Seabird Electrochemical Dissolved Oxygen IDO sensor (frequency output) | IDO_DOXY | IDO |  |  | 
+SBE63_OPTODE | Seabird Optical Dissolved Oxygen Sensor | OPTODE_DOXY | OPTODE |  |  | 
+AANDERAA_OPTODE |  | OPTODE_DOXY | OPTODE | 11/14/2016 | changed by CS | deprecated
+AANDERAA_OPTODE_3830 |  | OPTODE_DOXY | OPTODE |  |  | 
+AANDERAA_OPTODE_3835 |  | OPTODE_DOXY | OPTODE |  |  | 
+AANDERAA_OPTODE_3930 |  | OPTODE_DOXY | OPTODE |  |  | 
+AANDERAA_OPTODE_4330 |  | OPTODE_DOXY | OPTODE |  |  | 
+AANDERAA_OPTODE_4330F |  | OPTODE_DOXY | OPTODE |  |  | 
+ARO_FT | JAC RINKO | OPTODE_DOXY | OPTODE |  |  | 
+AROD_FT | deep housing | OPTODE_DOXY |  |  | 
+
+//Pressure sensors |  |  |  |  |  | 
+DRUCK_2900PSIA |  | CTD_PRES | PRES |  |  | 
+DRUCK |  | CTD_PRES | PRES |  |  | 
+DRUCK_10153PSIA |  | CTD_PRES | PRES |  | add by MB  05/10/2016 | 
+PAINE |  | CTD_PRES | PRES |  |  | 
+PAINE_1500PSIA |  | CTD_PRES | PRES |  |  | 
+PAINE_1600PSIA |  | CTD_PRES | PRES |  |  | 
+PAINE_2000PSIA |  | CTD_PRES | PRES |  |  | 
+PAINE_2900PSIA |  | CTD_PRES | PRES |  |  | 
+PAINE_3000PSIA |  | CTD_PRES | PRES |  |  | 
+AMETEK |  | CTD_PRES | PRES |  |  | 
+AMETEK_3000PSIA |  | CTD_PRES |  |  | add by MB 05/10/2016 | 
+KISTLER |  | CTD_PRES | PRES |  |  | 
+KISTLER_2900PSIA |  | CTD_PRES | PRES |  |  | 
+KISTLER_10153PSIA |  | CTD_PRES | PRES | 10/6/2015 | added by t. carval for j. gilson | 
+KELLER_PA8 |  | CTD_PRES | PRES | 17/08/2015 | added by M.B.  for A.Thresher | 
+SEASCAN_SSTD |  | CTD_PRES | PRES | 4/9/2015 | added by M.B for AOML | 
+MP40_C_2000_G | MICRON | CTD_PRES | PRES | 11/5/2016 | added by M.B for AOML | 
+
+//Near Surface conductivity and temperature sensors |  |  |  |  |  | 
+SBE_STS | SBE Near Surface Conductivity and Temperature Module | "STS_CNDC,STS_TEMP" | STS |  |  | 
+
+//Biogeochemical sensors | "* Note that some biogeochemical sensors have different configurations, i.e. they are either in the pumped stream or not in the pumped stream. Sensor readings from those in the pumped vs unpumped stream can be very different. Some manufacturers do not distinguish this in the sensor model name. In order to capture this information there is a configuration parameter that specifies this, i.e. CONFIG_SensorInPumpedStream_LOGICAL, (Yes =1, No = 0). For the relevant sensors this configuration parameter should be filled in the metadata file for the launch configuration settings. " |  |  |  |  | 
+
+//Spectrophotometers |  |  |  |  |  | 
+SUNA | UV absorption to derive nitrate and bisulfide (MBARI) | "SPECTROPHOTOMETER_NITRATE, SPECTROPHOTOMETER_BISULFIDE" | SUNA |  |  | 
+SUNA_V2 | UV absorption to derive nitrate and bisulfide (SATLANTIC) | "SPECTROPHOTOMETER_NITRATE, SPECTROPHOTOMETER_BISULFIDE" | SUNA |  |  | 
+ISUS | Nitrate (MBARI) | SPECTROPHOTOMETER_NITRATE | ISUS |  |  | 
+ISUS_V3 | Nitrate (SATLANTIC) | SPECTROPHOTOMETER_NITRATE | ISUS |  |  | 
+
+//Transmissometers |  |  |  |  |  | 
+C_STAR | Transmissometer | TRANSMISSOMETER_CP | CSTAR |  |  | 
+C_ROVER | Transmissometer (WETLABS) | TRANSMISSOMETER_CP<nnn> | CROVER | 11/14/2016 | changed by CS | 
+
+//pH sensors |  |  |  |  |  | 
+DURA | pH (MBARI) | TRANSISTOR_PH | DURAFET |  |  | 
+SEAFET | pH (SATLANTIC) | TRANSISTOR_PH | DURAFET |  |  | 
+
+//Radiometers |  |  |  |  |  | 
+SATLANTIC_OCR500 | Multispectral radiometer (SATLANTIC) |  | OCR | 11/14/2016 | changed by CS | deprecated
+SATLANTIC_OCR504 | Multispectral radiometer 4 channels  (SATLANTIC) (type and wavelength specified in SENSOR) | "RADIOMETER_DOWN_IRR<nnn>,RADIOMETER_PAR" | OCR | 1/9/2017 | changed by CS | deprecated
+SATLANTIC_OCR504_ICSW | Multispectral radiometer 4 channels  (SATLANTIC) with cosine detector to measure irradiance in water  (at wavelength <nnn> specified in Table 3 BGC-Argo parameters list) | "RADIOMETER_DOWN_IRR<nnn>, RADIOMETER_PAR" | OCR | 1/9/2017 | changed by CS | 
+SATLANTIC_OCR504_R10W | Multispectral radiometer 4 channels  (SATLANTIC) with a 10° half-angle field of view to measure radiance in water (at wavelength <nnn> specified in Table 3 BGC-Argo parameters list) | RADIOMETER_UP_RAD<nnn> | OCR | 1/9/2017 | changed by CS | 
+SATLANTIC_OCR507 | Multispectral radiometer 7 channels (SATLANTIC) (type and wavelength specified in SENSOR) |  | OCR | 1/9/2017 | changed by CS | deprecated
+SATLANTIC_OCR507_ICSW | Multispectral radiometer 7 channels (SATLANTIC) with cosine detector to measure irradiance in water  (at wavelength <nnn> specified in Table 3 BGC-Argo parameters list) | "RADIOMETER_DOWN_IRR<nnn>, RADIOMETER_PAR" | OCR | 1/9/2017 | changed by CS | 
+SATLANTIC_OCR507_R10W | Multispectral radiometer 7 channels (SATLANTIC) with a 10° half-angle field of view to measure radiance in water (at wavelength <nnn> specified in Table 3 BGC-Argo parameters list) | RADIOMETER_UP_RAD<nnn> | OCR | 1/9/2017 | changed by CS | 
+SATLANTIC_OCR507_ICSWR10W | Multispectral radiometer 7 channels (SATLANTIC) combination of cosine detector to measure irradiance and  a 10° half-angle field of view to measure radiance in water (at wavelength <nnn> specified in Table 3 BGC-Argo parameters list) | "RADIOMETER_DOWN_IRR<nnn> , RADIOMETER_PAR, RADIOMETER_UP_RAD<nnn>" | OCR | 1/9/2017 | changed by CS | 
+
+//Backscatteringmeters and Fluorometers combination |  |  |  |  |  | 
+FLBB | Fluorescence and Backscatter | "FLUOROMETER_CHLA,SCATTEROMETER_BBP" | FLBB | 11/14/2016 | changed by CS | deprecated
+FLBB_AP2 | Fluorescence and Backscatter | "FLUOROMETER_CHLA,SCATTEROMETER_BBP " | FLBB | 11/14/2016 | changed by CS | deprecated
+FLNTU | Fluorescence and Turbidity | "FLUOROMETER_CHLA, SCATTEROMETER_TURBIDITY" | FLNTU | 11/14/2016 | changed by CS | deprecated
+//ECO_[FL]_[BB]_[BB2]_[TRIPLET]_[CD]_[NTU]_[VSF] | WETLABS optical sensor packages | ??? | ECO | 11/14/2016 | changed by CS | deleted
+ECO_BB | Wetlabs Eco optical sensor packages with one backscattering meter (at wavelength <nnn> specified in Table 3 BGC-Argo parameters list) | BACKSCATTERINGMETER_BBP<nnn> | ECO | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | 
+ECO_FL | Wetlabs Eco optical sensor packages with one fluorometer (type specified in SENSOR) | FLUOROMETER_CHLA | ECO | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | 
+ECO_NTU | Wetlabs Eco optical sensor packages with one backscattering meter measuring turbidity | BACKSCATTERINGMETER_TURBIDITY | ECO | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | 
+ECO_FLBB | Wetlabs Eco optical sensor packages with one fluorometer (type specified in SENSOR) and one backscattering meter (at wavelength <nnn> specified in Table 3 BGC-Argo parameters list) | "FLUOROMETER_CHLA,BACKSCATTERINGMETER_BBP<nnn>" | ECO | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | 
+ECO_FLBB_AP2 | Wetlabs Eco optical sensor packages with one fluorometer (type specified in SENSOR) and one backscattering meter (wavelength specified in SENSOR) mounted on an Apex float | "FLUOROMETER_CHLA,BACKSCATTERINGMETER_BBP<nnn>" | ECO | 11/30/2016 | added by CS | 
+ECO_FLBB_2K | Wetlabs Eco optical sensor packages with one fluorometer (type specified in SENSOR) and one backscattering meter (at wavelength <nnn> specified in Table 3 BGC-Argo parameters list) certified for applications down to 2000m | "FLUOROMETER_CHLA,BACKSCATTERINGMETER_BBP<nnn>" | ECO | 11/30/2016 | added by CS | 
+ECO_FLNTU | Wetlabs Eco optical sensor packages with one fluorometer (type specified in SENSOR) and one backscattering meter measuring turbidity | "FLUOROMETER_CHLA, BACKSCATTERINGMETER_TURBIDITY" | ECO | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | 
+ECO_BB2 | Wetlabs Eco optical sensor packages with two backscatteringmeters (at wavelength <nnn> specified in Table 3 BGC-Argo parameters list) | BACKSCATTERINGMETER_BBP<nnn> | ECO | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | 
+ECO_PUCK | Wetlabs optical sensor packages | "FLUOROMETER_CHLA,SCATTEROMETER_BBP" | ECO | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | deprecated
+ECO_TRIPLET | Wetlabs optical sensor packages | "FLUOROMETER_CHLA,FLUOROMETER_CDOM, SCATTEROMETER_BBP" | ECO | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | deprecated
+ECO_FLBBCD | Wetlabs Eco optical sensor packages with two fluorometers (type specified in SENSOR) and one backscatteringmeter (at wavelength <nnn> specified in Table 3 BGC-Argo parameters list) | "FLUOROMETER_CHLA,FLUOROMETER_CDOM,BACKSCATTERINGMETER_BBP<nnn>" | ECO | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | 
+ECO_FLBB2 | Wetlabs Eco optical sensor packages with one fluorometer (type specified in SENSOR) and two backscatteringmeters (at wavelength <nnn> specified in Table 3 BGC-Argo parameters list) | "FLUOROMETER_CHLA,BACKSCATTERINGMETER_BBP<nnn>" | ECO | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | 
+ECO_BB3 | Wetlabs Eco optical sensor packages with 3 backscatteringmeters  (at wavelength <nnn> specified in Table 3 BGC-Argo parameters list) | BACKSCATTERINGMETER_BBP<nnn> | ECO | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | 
+ECO_MCOMS | Optical sensor (WETLABS) | "FLUOROMETER_CHLA,FLUOROMETER_CDOM,SCATTEROMETER_BBP" |  | 11/5/2016 | added by MB. validated by BioGCArgo | deprecated
+MCOMS_FLBBCD | "Wetlabs MCOMS optical sensor packages with two fluorometers CHLA, CDOM and one backscatteringmeter (at wavelength <nnn> specified in Table 3 BGC-Argo parameters list)" | "FLUOROMETER_CHLA,FLUOROMETER_CDOM,BACKSCATTERINGMETER_BBP<nnn>" | MCOMS | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | 
+MCOMS_FLBB2 | Wetlabs MCOMS optical sensor packages with one fluorometer CHLA and two backscatteringmeters (wavelengths  specified in SENSOR) | "FLUOROMETER_CHLA, BACKSCATTERINGMETER_BBP<nnn>" | MCOMS | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | 
+CYCLOPS_7_FLUOROMETER | Turner designs Optical sensor with one fluorometer and backscattering meter measuring turbidity | "FLUOROMETER_CHLA, BACKSCATTERINGMETER_TURBIDITY" | CYC | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | 
+SEAPOINT_TURBIDITY_METER | Seapoint turbidity meter | BACKSCATTERINGMETER_TURBIDITY | STM | 11/14/2016 | added by MB. validated by BioGCArgo- changed by CS | 
+
+//Other sensors |  |  |  |  |  | 
+RAFOS | Receiver mounted on some floats for geopositioning under ice using RAFOS sound sources in the array in the Weddell Sea (Location derivation is done in Delayed Mode for under ice floats equipped with RAFOS receivers). | ACOUSTIC_GEOLOCATION | RAFOS |  |  | 
+PAL_UW | UW Passive acoustic listener | ACOUSTIC | PAL |  |  | 
+EM | Electromagnetic sensor package to measure velocity | EM | EM |  |  | 
+UNKNOWN | Unknown sensor model | UNKNOWN_SENSOR_MODEL | UNKNOWN | 29/06/2015 | request from Wataru Ito | "The sensor model should not be unknown, the use of this value should be exceptional"

@@ -1,0 +1,7 @@
+<FileCheckResults filechecker_version="-r680" spec_version="-r710">
+  <file>/Volumes/Gdoye$/Proyectos/Argo/DelayedMode/Programas/FileChecker/Output//.DS_Store</file>
+  <status>ERROR</status>
+  <phase>OPEN-FILE</phase>
+  <errors>Open exception:
+java.io.IOException: Error opening '/Volumes/Gdoye$/Proyectos/Argo/DelayedMode/Programas/FileChecker/Output//.DS_Store': java.io.IOException: Cant read /Volumes/Gdoye$/Proyectos/Argo/DelayedMode/Programas/FileChecker/Output//.DS_Store: not a valid CDM file.</errors>
+</FileCheckResults>

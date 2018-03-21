@@ -1,0 +1,39 @@
+function gui_frontend(wmonum)
+    %function gui_frontend(wmonum)
+    fetch_from_gdac(wmonum)
+    
+    QC1 = '/Volumes/HD1/argo/DMQC/QC2/';
+    QC2 = '/Volumes/HD1/argo/DMQC/QC2/';
+    
+    % call up gui
+    qc1path  = [QC1,num2str(wmonum),'/'];
+    
+    Config.inpath=qc1path;
+    Config.outpath=qc1path;
+    
+    %HISTORY_INSTITUTION [Optional]
+    Config.HISTORY_INSTITUTION='WHOI';
+    %Climatology [Optional]
+    Config.CLIFile='WOA05.mat';
+    
+    argo_edit_gui(Config)
+
+    % apply thermal mass correction
+    qc2path  = [QC2,num2str(wmonum),'/'];
+    if exist(qc2path) ~=7
+        disp(['Making directory: ',qc2path])
+        eval(['!mkdir ',qc2path])
+    end
+    eval(['!cp ',qc1path,'/*.nc ' ,qc2path])
+    
+    w=dir(qc2path);
+    % sort names because matlab doesn't understand english
+    tw=strvcat(w.name);
+    wqc=sortrows(tw);
+    nqc = length(strmatch('R',wqc(:,1)));
+    iqc = strmatch('R',wqc(:,1));
+    for ii = 1:nqc
+        flname = wqc(iqc(ii),:);
+        ncfile  = fullfile(qc2path,flname);
+        apply_therm_lag(ncfile)
+    end

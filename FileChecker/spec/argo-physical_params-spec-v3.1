@@ -1,0 +1,100 @@
+// Based on:
+//    Argo User's manual reference table 3 : list of physical parameters, last update : 4 Feb 2016
+// $Revision: 657 $
+// $Date: 2017-04-24 16:48:54 +0000 (Mon, 24 Apr 2017) $
+
+// Special codes:
+//    "<->" attribute cannot exist; "<*>" attribute optional, value ignored; <+> attribute must exist, value is ignored
+
+// Special settings:
+// Define some additional specialized attribute settings
+// They are NOT free-form.  That is the Java parsing code has specific names that are hard-coded.
+
+ADJUSTED_ERROR:comment | <->
+ADJUSTED_ERROR:long_name | Contains the error on the adjusted values as determined by the delayed mode QC process
+PRES_ADJUSTED:axis | <*>
+
+//type | parameter name | long_name | cf_standard_name | unit | valid_min | valid_max | core/bio/intermediate
+float | CNDC | Electrical conductivity | sea_water_electrical_conductivity | mhos/m | 0.f | 8.5f | c
+float | PRES | Sea water pressure, equals 0 at sea-level | sea_water_pressure | decibar | 0.f | 12000.f | c
+float | PSAL | Practical salinity | sea_water_salinity | psu | 2.f | 41.f | c
+float | TEMP | Sea temperature in-situ ITS-90 scale | sea_water_temperature | degree_Celsius | -2.5f | 40.f | c
+float | DOXY | Dissolved oxygen | moles_of_oxygen_per_unit_mass_in_sea_water | micromole/kg | -5.f | 600.f | b
+float | TEMP_DOXY | Sea temperature from oxygen sensor ITS-90 scale | temperature_of_sensor_for_oxygen_in_sea_water | degree_Celsius | -2.f | 40.f | i
+float | TEMP_VOLTAGE_DOXY | Thermistor voltage reported by oxygen sensor | <-> | volt | <-> | <-> | i
+float | VOLTAGE_DOXY | Voltage reported by oxygen sensor | <-> | volt | 0.f | 100.f | i
+float | FREQUENCY_DOXY | Frequency reported by oxygen sensor | <-> | hertz | 0.f | 25000.f | i
+float | COUNT_DOXY | Count reported by oxygen sensor | <-> | count | <-> | <-> | i
+float | BPHASE_DOXY | Uncalibrated phase shift reported by oxygen sensor | <-> | degree | 10.f | 70.f | i
+float | DPHASE_DOXY | Calibrated phase shift reported by oxygen sensor | <-> | degree | 10.f | 70.f | i
+float | TPHASE_DOXY | Uncalibrated phase shift reported by oxygen sensor | <-> | degree | 10.f | 70.f | i
+float | C1PHASE_DOXY | Uncalibrated phase shift reported by oxygen sensor | <-> | degree | 10.f | 70.f | i
+float | C2PHASE_DOXY | Uncalibrated phase shift reported by oxygen sensor | <-> | degree | 0.f | 15.f | i
+float | MOLAR_DOXY | Uncompensated (pressure and salinity) oxygen concentration reported by the oxygen sensor | mole_concentration_of_dissolved_molecular_oxygen_in_sea_water | micromole/l | 0.f | 650.f | i
+float | PHASE_DELAY_DOXY | Phase delay reported by oxygen sensor | <-> | microsecond | 0.f | 99999.f | i
+float | MLPL_DOXY | Oxygen concentration reported by the oxygen sensor | <-> | ml/l | 0.f | 650.f | i
+float | NB_SAMPLE | Number of samples in bin | <-> | dimensionless | <-> | <-> | i
+float | RPHASE_DOXY | Uncalibrated red phase shift reported by oxygen sensor | <-> | degree | 10.f | 70.f | i
+float | TEMP_COUNT_DOXY | Count which is expressive of uncalibrated temperature value reported by oxygen sensor | <-> | count | <-> | <-> | i
+double| LED_FLASHING_COUNT_DOXY | Number of times oxygen sensor flashing to measure oxygen | <-> | count | <-> | <-> | i
+float | PPOX_DOXY | Partial pressure of oxygen | <-> | millibar | -5.f | 5000.f | i
+float | BETA_BACKSCATTERING | Total angle specific volume from backscattering sensor at x nanometers | <-> | count | <-> | <-> | i
+float | BETA_BACKSCATTERING470 | Total angle specific volume from backscattering sensor at 470 nanometers | <-> | count | <-> | <-> | i
+float | BETA_BACKSCATTERING532 | Total angle specific volume from backscattering sensor at 532 nanometers | <-> | count | <-> | <-> | i
+float | BETA_BACKSCATTERING700 | Total angle specific volume from backscattering sensor at 700 nanometers | <-> | count | <-> | <-> | i
+float | FLUORESCENCE_CHLA | Chlorophyll-A signal from fluorescence sensor | <-> | count | <-> | <-> | i
+float | TEMP_CPU_CHLA | Thermistor signal from backscattering sensor | <-> | count | <-> | <-> | i
+float | FLUORESCENCE_CDOM | Raw fluorescence from coloured dissolved organic matter sensor | <-> | count | <-> | <-> | i
+float | SIDE_SCATTERING_TURBIDITY | Turbidity signal from side scattering sensor | <-> | count | <-> | <-> | i
+float | TRANSMITTANCE_PARTICLE_BEAM_ATTENUATION | Beam attenuation from transmissometer sensor at x nanometers | <-> | count | <-> | <-> | i
+float | TRANSMITTANCE_PARTICLE_BEAM_ATTENUATION660 | Beam attenuation from transmissometer sensor at 660 nanometers | <-> | dimensionless | <-> | <-> | i
+float | BBP | Particle backscattering at x nanometers | <-> | m-1 | <-> | <-> | b
+float | BBP470 | Particle backscattering at 470 nanometers | <-> | m-1 | <-> | <-> | b
+float | BBP532 | Particle backscattering at 532 nanometers | <-> | m-1 | <-> | <-> | b
+float | BBP700 | Particle backscattering at 700 nanometers | <-> | m-1 | <-> | <-> | b
+float | TURBIDITY | Sea water turbidity | sea_water_turbidity | ntu | <-> | <-> | b
+float | CP | Particle beam attenuation at x nanometers | <-> | m-1 | <-> | <-> | b
+float | CP660 | Particle beam attenuation at 660 nanometers | <-> | m-1 | <-> | <-> | b
+float | CHLA | Chlorophyll-A | mass_concentration_of_chlorophyll_a_in_sea_water | mg/m3 | <-> | <-> | b
+float | CDOM | Concentration of coloured dissolved organic matter in sea water | <-> | ppb | <-> | <-> | b
+float+| UV_INTENSITY_NITRATE | Intensity of ultra violet flux from nitrate sensor | <-> | count | <-> | <-> | i
+float | UV_INTENSITY_DARK_NITRATE | Intensity of ultra violet flux dark measurement from nitrate sensor | <-> | count | <-> | <-> | i
+float | UV_INTENSITY_DARK_SEAWATER_NITRATE | Intensity of ultra-violet flux dark sea water from nitrate sensor | <-> | count | <-> | <-> | i
+float | NITRATE | Nitrate | moles_of_nitrate_per_unit_mass_in_sea_water | micromole/kg | <-> | <-> | b
+float | BISULFIDE | Bisulfide | <-> | micromole/kg | <-> | <-> | b
+float | MOLAR_NITRATE | Nitrate | <-> | micromole/l | <-> | <-> | i
+float | FIT_ERROR_NITRATE | Nitrate fit error | <-> | dimensionless | <-> | <-> | i
+float | TEMP_NITRATE | Internal temperature of the SUNA sensor | <-> | degree_Celsius | <-> | <-> | i
+float | TEMP_SPECTROPHOTOMETER_NITRATE | Temperature of the spectrometer | <-> | degree_Celsius | <-> | <-> | i
+float | HUMIDITY_NITRATE | Relative humidity inside the SUNA sensor (If > 50% There is a leak) | <-> | percent | 0.f | 100.f | i
+float | VRS_PH | Voltage difference between reference and source from pH sensor | <-> | volt | <-> | <-> | i
+float | TEMP_PH | Sea temperature from pH sensor | <-> | degree_Celsius | -2.f | 40.f | i
+float | IB_PH | Base current of pH sensor | <-> | nanoampere | <-> | <-> | i
+float | PH_IN_SITU_TOTAL | pH | sea_water_ph_reported_on_total_scale | dimensionless | <-> | <-> | b
+float | PH_IN_SITU_FREE | pH | <-> | dimensionless | <-> | <-> | i
+float | PH_IN_SITU_SEAWATER | pH | <-> | dimensionless | <-> | <-> | i
+double| RAW_DOWNWELLING_IRRADIANCE | Raw downwelling irradiance at x nanometers | <-> | count | <-> | <-> | i
+double| RAW_DOWNWELLING_IRRADIANCE380 | Raw downwelling irradiance at 380 nanometers | <-> | count | <-> | <-> | i
+double| RAW_DOWNWELLING_IRRADIANCE412 | Raw downwelling irradiance at 412 nanometers | <-> | count | <-> | <-> | i
+double| RAW_DOWNWELLING_IRRADIANCE443 | Raw downwelling irradiance at 443 nanometers | <-> | count | <-> | <-> | i
+double| RAW_DOWNWELLING_IRRADIANCE490 | Raw downwelling irradiance at 490 nanometers | <-> | count | <-> | <-> | i
+double| RAW_DOWNWELLING_IRRADIANCE555 | Raw downwelling irradiance at 555 nanometers | <-> | count | <-> | <-> | i
+float | DOWN_IRRADIANCE | Downwelling irradiance at x nanometers | <-> | W/m^2/nm | <-> | <-> | b
+float | DOWN_IRRADIANCE380 | Downwelling irradiance at 380 nanometers | <-> | W/m^2/nm | <-> | <-> | b
+float | DOWN_IRRADIANCE412 | Downwelling irradiance at 412 nanometers | <-> | W/m^2/nm | <-> | <-> | b
+float | DOWN_IRRADIANCE443 | Downwelling irradiance at 443 nanometers | <-> | W/m^2/nm | <-> | <-> | b
+float | DOWN_IRRADIANCE490 | Downwelling irradiance at 490 nanometers | <-> | W/m^2/nm | <-> | <-> | b
+float | DOWN_IRRADIANCE555 | Downwelling irradiance at 555 nanometers | <-> | W/m^2/nm | <-> | <-> | b
+float | RAW_UPWELLING_RADIANCE | Raw upwelling radiance at x nanometers | <-> | count | <-> | <-> | i
+float | RAW_UPWELLING_RADIANCE412 | Raw upwelling radiance at 412 nanometers | <-> | count | <-> | <-> | i
+float | RAW_UPWELLING_RADIANCE443 | Raw upwelling radiance at 443 nanometers | <-> | count | <-> | <-> | i
+float | RAW_UPWELLING_RADIANCE490 | Raw upwelling radiance at 490 nanometers | <-> | count | <-> | <-> | i
+float | RAW_UPWELLING_RADIANCE555 | Raw upwelling radiance at 555 nanometers | <-> | count | <-> | <-> | i
+float | UP_RADIANCE | Upwelling radiance at x nanometers | upwelling_radiance_in_sea_water | W/m^2/nm/sr | <-> | <-> | b
+float | UP_RADIANCE412 | Upwelling radiance at 412 nanometers | upwelling_radiance_in_sea_water | W/m^2/nm/sr | <-> | <-> | b
+float | UP_RADIANCE443 | Upwelling radiance at 443 nanometers | upwelling_radiance_in_sea_water | W/m^2/nm/sr | <-> | <-> | b
+float | UP_RADIANCE490 | Upwelling radiance at 490 nanometers | upwelling_radiance_in_sea_water | W/m^2/nm/sr | <-> | <-> | b
+float | UP_RADIANCE555 | Upwelling radiance at 555 nanometers | upwelling_radiance_in_sea_water | W/m^2/nm/sr | <-> | <-> | b
+double| RAW_DOWNWELLING_PAR | Raw downwelling photosynthetic available radiation | <-> | count | <-> | <-> | i
+float | DOWNWELLING_PAR | Downwelling photosynthetic available radiation | downwelling_photosynthetic_photon_flux_in_sea_water | microMoleQuanta/m^2/sec | <-> | <-> | b
+float | TILT | Inclination of the float axis in respect to the local vertical | <-> | degree | <-> | <-> | i

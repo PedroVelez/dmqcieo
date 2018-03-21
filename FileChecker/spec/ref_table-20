@@ -1,0 +1,10 @@
+// $Revision: 657 $
+// $Date: 2017-04-24 16:48:54 +0000 (Mon, 24 Apr 2017) $
+//
+// Reference table 20: Grounded Flag
+
+Y | Yes, the float touched the ground
+B | Yes, the float touched the ground after bathymetry check with an outside database
+N | No, the float did not touch the ground
+S | Float is known to be drifting at a shallower depth than originally programmed
+U | Unknown

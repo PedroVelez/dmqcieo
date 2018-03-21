@@ -1,0 +1,21 @@
+Latest release of "Argo physical parameter" list.
+
+  old: float | DOXY | Dissolved oxygen | moles_of_oxygen_per_unit_mass_in_sea_water | micromole/kg | 0.f | 600.f | b
+  new: float | DOXY | Dissolved oxygen | moles_of_oxygen_per_unit_mass_in_sea_water | micromole/kg | -5.f | 600.f | b
+
+  old: float | COUNT_DOXY | Count reported by oxygen sensor | <-> | dimensionless | 0.f | 100.f | i
+  new: float | COUNT_DOXY | Count reported by oxygen sensor | <-> | count | <-> | <-> | i
+
+  old: float | C2PHASE_DOXY | Uncalibrated phase shift reported by oxygen sensor | <-> | degree | 10.f | 70.f | i
+  new: float | C2PHASE_DOXY | Uncalibrated phase shift reported by oxygen sensor | <-> | degree | 0.f | 15.f | i
+
+  new: float | TEMP_COUNT_DOXY | Count which is expressive of uncalibrated temperature value reported by oxygen sensor | <-> | count | <-> | <-> | i
+  new: float | LED_FLASHING_COUNT_DOXY | Number of times oxygen sensor flashing to measure oxygen | <-> | count | <-> | <-> | i
+  new: float | PPOX_DOXY | Partial pressure of oxygen | <-> | millibar | -5.f | 600.f | i
+
+Add "attr_regexp" files for bio-profile and bio-trajectory v3.1 files
+
+  Allow the previous DOXY:valid_min value for some grace period
+  Also allows the same global attributes in bio-trajectory as in bio-profile
+
+

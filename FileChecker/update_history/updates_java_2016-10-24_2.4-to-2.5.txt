@@ -1,0 +1,73 @@
+Summary
+=======
+
+The primary purpose for moving from v2.4 to v2.5 is to implement
+trajectory file data consistency checks.  
+
+The initial deployment of v2.5 will have these checks turned off.
+There is no change to the results between this deployment and the
+last release of v2.4.
+
+Minor change to ValidateSubmit arguments:
+- the "format-only-pre-v3.1" option is now the default
+  - this option is deprecated but is still accepted for
+    backwards compatibility
+- new argument "data-check-all" to force al files to be data checked
+
+
+***************
+Details
+***************
+
+ValidateSubmit.java
+===================
+- make "format-only-pre-v3.1" the default
+  - argument still accepted for backwards compatibility
+- add "data-check-all" argument to force all files to be data checked
+
+
+
+ArgoDataFile.java
+=================
+- Change name of isPhysParamFillValue to is_99_999_FillValue
+  - just make it more generic
+
+- Add "returnNulls" option to the readString(...) methods
+
+- Add new readString(var, n, m, returnNulls) case
+
+
+ArgoProfileFile.java
+====================
+
+- Have stringRead(...) return nulls for a bunch of reads
+  - ensures one-to-one correspondence with other arrays
+- Switch to new "is fill value" method names
+
+
+ArgoReferenceTable
+==================
+- remove "2 column" requirement on all reference tables
+  - will properly read and parse 1 or 2 or more column tables
+
+- add readMapCharString method
+  - adopt method instead of doing direct reads
+
+- add readMapIntegerString method
+
+- add read of reference tables 5, 19, 20
+
+- add reads of "measurement code" tables
+
+
+
+ArgoTrajectoryFile.java
+=======================
+- massive change to most everything it does which is why it is
+  changing to v2.5
+
+
+WriteMergeProfile.java
+======================
+- major re-write.  now creates variables and attributes by copying them from the
+  core- and/or bio-file.

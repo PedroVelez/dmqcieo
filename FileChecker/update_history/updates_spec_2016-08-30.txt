@@ -1,0 +1,1 @@
+Update the core CONFIG parameter file to match the 2016-08-17 file

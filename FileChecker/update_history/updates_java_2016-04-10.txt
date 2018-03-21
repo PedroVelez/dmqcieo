@@ -1,0 +1,113 @@
+!!!!!!!!!!!   CHANGE OF REVISION FROM 2.3 to 2.4   !!!!!!!!!!
+
+
+SUMMARY
+=======
+
+Add "GDAC file name" validation to FileChecker (used to be a separate check at each GDAC)
+
+Add capability to WARN (or NOWARN) when an attribute is using a deprecated setting
+during a "transition" 
+- implemented via the "attr_regex" spec-file
+- currently being used to transition the valid_min/valid_max values of
+    DOXY:valid_min = 0.0;           WARN 
+    DOXY_ADJUSTED:valid_min = 0.0;  WARN
+    DOXY_STD:valid_min = 0.0;       WARN
+    DOXY_MED:valid_min = 0.0;       WARN
+
+    C2PHASE_DOXY:valid_min = 10.0;  WARN
+    C2PHASE_DOXY:valid_max = 70.0;  WARN
+    C2PHASE_DOXY_ADJUSTED:valid_min = 10.0; WARN
+    C2PHASE_DOXY_ADJUSTED:valid_max = 70.0; WARN
+    C2PHASE_DOXY_MED:valid_min = 10.0;      WARN
+    C2PHASE_DOXY_MED:valid_max = 70.0;      WARN
+
+Add meta-data CONFIG_PARAMETER_NAME unit checking (using the tech-unit list)
+
+Make testing for FillValue more explicit for "physical parameter" data (profile files)
+- simple less-than/greater-than checking of FillValue is failing on some ill-advised
+  values where non-missing data can be greater than the FillValue
+
+<PARAM>_STD: valid_min, valid_max are no longer required
+- *** interesting technicality:  in e-mail discussion the decision was that these 
+  parameters should not be allowed for these variables.
+  EXCEPT that at ADMT-16 it was decided that extra (undocumented) attributes
+  are allowed -- the FileChecker doesn't check for them and doesn't reject them.
+  So, if someone provides these attributes they are just considered "extra attributes"
+  and they are allowed. Therefore, in practice, they are just "not required".
+- *** the required attribute settings should be defined in the "physical parameter list".
+  This list states that <PARAM>_STD and <PARAM>_MED are allowed but it does NOT
+  say anything about the required attributes for these variables.
+
+
+Check that PARAM_ADJUSTED and PARAM_ADJUSTED_ERROR have the same number of
+levels set in D-mode profile files
+
+Allow PARAM_ADJUSTED_ERROR to be set in A-mode for bio-parameters
+
+Date check changes:
+- Removed test (warning) of DATE_UPDATE within 3 days of GDAC submit date - all files
+- Meta-data: 
+  - Make LAUNCH_DATE mandatory (previously documented this way but code wasn't
+    enforcing it)
+  - Remove check that compares START_DATE to LAUNCH_DATE
+- Profile:
+  - allow JULD and JULD_LOCATION to differ by 2 days (instead of 1)
+  - if JULD_LOCATION is missing POSITION must be missing
+     (used to have another check on POSITION_QC)
+
+Trajectory Files:
+- implement meta-data and reasonable date checks
+- implement TRAJECTORY_PARAMETERS checks
+- N_MEASUREMENT variables and N_CYCLE variables are NOT checked (yet)
+
+
+DETAILED
+========
+
+ValidateSubmit
+- remove "freshness check" code/option etc
+- add bio-traj to validate
+- add optional gdac-file-name validation
+
+ArgoDataFile
+- add isPhysicalParamFillValue
+- create AttrRegex inner class to allow warning-request
+- implement warnings when requested in spec/*.attr_regex
+- add getGdacFileName and validateGdacFileName methods
+- readjusted log messages
+
+ArgoFileSpecification
+- change various "tech-unit" variable names to reflect both config & tech usage
+- update parseAttrRegex to accept "warning request"
+- implement AttrRegex class
+- parse "unit file" in meta-data specification
+- allow global attribute regex's to be specified in *.CDL file
+-
+
+ArgoMetadataFile
+- remove "freshness" check (DATE_UPDATE compared to submit time)
+- make DATE_LAUNCH mandatory
+- remove LAUNCH_DATE / START_DATE comparisons
+- add CONFIG_PARAM unit checking
+
+ArgoProfileFile
+- remove "freshness" check (DATE_UPDATE compared to submit time)
+- implement isPhysicalParamFillValue throughout code to
+  make missing value testing more explicit
+- make sure that the same number of levels have data for D-mode
+  files in p_ADJUSTED and _ADJUSTED_ERROR
+- change dimension reads to convenience functions
+- change var reads to convenience functions
+- remove some vestigle code
+
+ArgoTechnicalFile
+- remove "freshness" check (DATE_UPDATE compared to submit time)
+- switch to convenience functions dimension and variable reads
+
+ArgoTrajectoryFile
+- implement date checks
+- implement TRAJECTORY_PARAMETERS checks
+- remove "freshness" check (DATE_UPDATE compared to submit time)
+- switch to convenience functions dimension and variable reads
+

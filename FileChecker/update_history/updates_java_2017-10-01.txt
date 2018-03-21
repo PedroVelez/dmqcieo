@@ -1,0 +1,56 @@
+SUMMARY:
+========
+
+CONFIG_MISSION_NUMBER checks:
+- added to meta-data, profile, and trajectory (udpated) file checks
+- a value of 0 is not allowed anywhere
+- FillValue:
+  - allowed in R-mode profile files and R-mode cycles in trajectory files
+  - allowed with WARNING in meta-data file
+
+- ***TEMPORARILY*** zero values only generates warnings to allow DACs to adjust
+
+Reference Table input:
+- detects a status of "deprecated" - marks the entry as such
+- detects the "active" statuses - marks the entry as valid
+- detects other statuses - marks the entry as invalid
+
+Reference Table checks:
+- "deprecated" entries generate WARNING (but are accepted)
+- "invalid" entries generate ERRORS and are rejected
+
+
+DETAILS:
+========
+ArgoMetadataFile.java
+- add CONFIG_MISSION_NUMBER tests
+  - ONLY GENERATES WARNINGS currently
+- new reference table handling
+  - add deprecated warnings
+- switched to many of the newer ArgoDataFile convenience functions
+
+ArgoProfileFile.java:
+- add CONFIG_MISSION_NUMBER tests
+  - ONLY GENERATES WARNINGS currently
+- implement new reference table interface
+  - add deprecated warnings
+
+ArgoReferenceTable.java:
+- major re-write
+- handle the new Status types
+  - detects "deprecated" for warnings
+- improve interface 
+
+ArgoTrajectoryFile.java:
+- add CONFIG_MISSION_NUMBER tests
+  - ONLY GENERATES WARNINGS currently
+- implement new reference table interface
+  - add deprecated warnings
+
+ValidateSubmit.java:
+- modify some diagnostics and log entries
+- make ResultsFile internal class external
+
+ResultsFile.java:
+- make it a first-class class so it can be used elsewhere
+

@@ -1,0 +1,35 @@
+// $Revision: 657 $
+// $Date: 2017-04-24 16:48:54 +0000 (Mon, 24 Apr 2017) $
+
+// Special codes:
+//    "<->" attribute cannot exist; "<*>" attribute optional, value ignored; <+> attribute must exist, value is ignored
+
+// Special settings:
+// Define some additional specialized attribute settings
+// They are NOT free-form.  That is the Java parsing code has specific names that are hard-coded.
+
+ADJUSTED_ERROR:comment | Contains the error on the adjusted values as determined by the delayed mode QC process.
+PRES:axis | <-> |
+PRES_ADJUSTED:axis | <-> |
+
+// Parameter specifications:
+// Version 2.2 and earlier, there was an attribute "comment" and no attribute "standard_name"
+// Therefore, the 4th column is used for "comment"
+// Also, all parameters were "core" -- the "c" in the category column
+
+//type | param | long_name | comment | units | valid_min | valid_max | category(c,b,i)
+
+float | CNDC | ELECTRICAL CONDUCTIVITY | In situ measurement | mhos/m | 0.f | 60.f | c
+float | PRES | SEA PRESSURE | In situ measurement, sea surface = 0 | decibar | 0.f | 12000.f | c
+float | PSAL | PRACTICAL SALINITY | In situ measurement | psu | 0.f | 42.f | c
+float | TEMP | SEA TEMPERATURE IN SITU ITS-90 SCALE | In situ measurement | degree_Celsius | -2.f | 40.f | c
+
+float | BPHASE_DOXY  | OPTICAL PHASE-SHIFT FROM OXYGEN SENSOR | In situ measurement | degree | 10.f | 70.f | c
+float | COUNT_DOXY  | COUNT_DOXY | Raw counts reported by sensos such as SBE43 | * | 0.f | 100.f | c
+float | DOXY | DISSOLVED OXYGEN | In situ measurement  | micromole/kg | 0.f | 650.f | c
+float | DPHASE_DOXY | DPHASE_DOXY | Calibrated phase shirt reported by sensors such as Aandera Optode | degree | <+> | <+> | c
+float | FREQUENCY_DOXY | FREQUENCY_DOXY | Frequency reported by sensors such as SBE43 | hertz | <+> | <+> | c
+float | MOLAR_DOXY | MOLAR_DOXY | Technical value reported by sensors such as Aandera Optode | micromole/litre | <+> | <+> | c
+float | PRES_DOXY  | SEA PRESSURE FROM DOXY SENSOR | In situ measurement, sea surface = 0 | decibar | <+> | <+> | c
+float | VOLTAGE_DOXY | VOLTAGE_DOXY | Voltage reported by sensors such as SBE43 | volt | <+> | <+> | c
+float | TEMP_DOXY  | SEA TEMPERATURE FROM DOXY SENSOR (ITS-90 SCALE) | In situ measurement  | degree_Celsius | -2.f | 40.f | c

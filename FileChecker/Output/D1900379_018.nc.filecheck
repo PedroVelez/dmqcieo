@@ -1,0 +1,31 @@
+<FileCheckResults filechecker_version="-r680" spec_version="-r710">
+  <file>/Volumes/GDOYE$/Proyectos/Argo/DelayedMode/Programas/FileChecker/Input/D1900379_018.nc</file>
+  <status>FILE-ACCEPTED</status>
+  <phase>FILE-NAME-CHECK</phase>
+  <metadata>
+    <dac>coriolis</dac>
+    <DATA_TYPE>Argo profile</DATA_TYPE>
+    <FORMAT_VERSION>3.1 </FORMAT_VERSION>
+    <DATE_UPDATE>20180206150310</DATE_UPDATE>
+    <DATA_CENTRE> IF</DATA_CENTRE>
+    <PLATFORM_NUMBER> 1900379</PLATFORM_NUMBER>
+    <PI_NAME> Daniel BALLESTERO</PI_NAME>
+    <WMO_INST_TYPE> 841</WMO_INST_TYPE>
+    <DATA_MODE>D</DATA_MODE>
+    <DIRECTION>A</DIRECTION>
+    <N_PROF>1</N_PROF>
+    <N_LEVELS>55</N_LEVELS>
+    <CYCLE_NUMBER> 018</CYCLE_NUMBER>
+    <JULD-dtg> 20060608055200</JULD-dtg>
+    <LATITUDE> 9.1600</LATITUDE>
+    <LONGITUDE> -88.7250</LONGITUDE>
+    <JULD_QC>1</JULD_QC>
+    <POSITION_QC>1</POSITION_QC>
+    <PROFILE_TEMP_QC>F</PROFILE_TEMP_QC>
+    <PROFILE_PSAL_QC>F</PROFILE_PSAL_QC>
+    <PROFILE_DOXY_QC>null</PROFILE_DOXY_QC>
+    <STATION_PARAMETERS>PRES TEMP PSAL</STATION_PARAMETERS>
+  </metadata>
+  <errors number="0"/>
+  <warnings number="0"/>
+</FileCheckResults>
