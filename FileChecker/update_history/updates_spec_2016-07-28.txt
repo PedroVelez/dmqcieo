@@ -1,6 +1,0 @@
-ref_table-25
-- add RADIOMETER_UP_RAD
-
-ref_table-27
-- remove SBE61CP that was deleted with "cross-out" in 2015-10
-- add entries related to above

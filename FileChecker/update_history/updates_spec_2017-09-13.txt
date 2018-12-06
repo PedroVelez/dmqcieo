@@ -1,7 +1,0 @@
-ref_table-27
-============
-Add AROD_FT
-
-ref_table-25
-============
-Add ability to append a sensor number to SENSOR names

@@ -1,7 +1,0 @@
-Updates to:
-  ref_table-25   (SENSOR)
-  ref_table-27   (SENSOR_MODEL)
-
-Add PROVOR-IV to
-  ref_table-8
-  ref_table-23

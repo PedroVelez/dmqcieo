@@ -1,3 +1,0 @@
-ref_table-27
-- add two new models for Japan
-

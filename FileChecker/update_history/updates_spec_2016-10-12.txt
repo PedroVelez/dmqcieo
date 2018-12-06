@@ -1,4 +1,0 @@
-Add new entries to ref_table 8
-- PROVOR III, S2X, NAMI, etc
-- there is a conflict with the old code for HM2000
-  - not sure how this will be resolved

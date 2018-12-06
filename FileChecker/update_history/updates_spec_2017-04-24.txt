@@ -1,3 +1,0 @@
-argo-config_names-spec-v3.1
-- add new "core" configuration parameter names
-- source file update date: 21 April 2017

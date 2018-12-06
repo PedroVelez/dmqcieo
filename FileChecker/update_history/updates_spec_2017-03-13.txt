@@ -1,3 +1,0 @@
-Ref Table 5
-===========
-Add Argos location classes A, B, Z
