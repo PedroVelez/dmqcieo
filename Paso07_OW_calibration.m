@@ -28,14 +28,14 @@ clearvars ;close all; global GlobalSU;load Globales; clc
 %%
 float_dirs = {''};
 
-floats=[6900780];
+floats=[6901238];
 
-%% 
+%%
 lo_system_configuration.PLOT_DIAGNOSIS_FORMAT='PDF';
 
 %% Climatology Data Input Paths
 lo_system_configuration.HISTORICAL_DIRECTORY=fullfile(GlobalSU.ArgoDMQC,'/data/climatology');
-lo_system_configuration.HISTORICAL_CTD_PREFIX=fullfile(filesep,'CTD_for_DMQC_2017V01','ctd_');
+lo_system_configuration.HISTORICAL_CTD_PREFIX=fullfile(filesep,'CTD_for_DMQC_2018V01','ctd_');
 lo_system_configuration.HISTORICAL_BOTTLE_PREFIX=fullfile(filesep,'historical_bot','bot_');
 lo_system_configuration.HISTORICAL_ARGO_PREFIX= fullfile(filesep,'ARGO_for_DMQC_2017V02','argo_');
 
@@ -94,7 +94,7 @@ lo_system_configuration.MAP_P_EXCLUDE='200';
 lo_system_configuration.MAP_P_DELTA='250';
 
 %% set_calseries
-lo_system_configuration.MAX_BREAKS=2;
+lo_system_configuration.MAX_BREAKS=4;
 
 %% Inicio
 
@@ -108,7 +108,6 @@ for i1=1:length(floats)
     lo_system_configuration.FLOAT_MAPPED_PREFIX='map_A_';
     lo_system_configuration.FLOAT_CALIB_PREFIX='cal_A_';
     lo_system_configuration.FLOAT_CALSERIES_PREFIX='calseries_A_';
-    %lo_system_configuration.CONFIG_WMO_BOXES='wmo_boxes_CTD_for_DMQC_2014V01_ARGO_for_DMQC_2017V02.mat';
     lo_system_configuration.CONFIG_WMO_BOXES='wmo_boxes_CTD_for_DMQC.mat';
     lo_system_configuration.MAPSCALE_AGE='2';
     fprintf('>>>>> OW working on %s, %s \n',flt_name,datestr(now));
@@ -125,7 +124,7 @@ for i1=1:length(floats)
     lo_system_configuration.FLOAT_MAPPED_PREFIX='map_B_';
     lo_system_configuration.FLOAT_CALIB_PREFIX='cal_B_';
     lo_system_configuration.FLOAT_CALSERIES_PREFIX='calseries_B_';
-    lo_system_configuration.CONFIG_WMO_BOXES='wmo_boxes_CTD_for_DMQC_2014V01.mat';
+    lo_system_configuration.CONFIG_WMO_BOXES='wmo_boxes_CTD_for_DMQC.mat';
     lo_system_configuration.MAPSCALE_AGE='2';
     fprintf('>>>>> OW working on %s, %s \n',flt_name,datestr(now));
     update_salinity_mapping(flt_dir,flt_name,lo_system_configuration);
@@ -142,7 +141,7 @@ for i1=1:length(floats)
     lo_system_configuration.FLOAT_MAPPED_PREFIX='map_C_';
     lo_system_configuration.FLOAT_CALIB_PREFIX='cal_C_';
     lo_system_configuration.FLOAT_CALSERIES_PREFIX='calseries_C_';
-    lo_system_configuration.CONFIG_WMO_BOXES='wmo_boxes_CTD_for_DMQC_2014V01_ARGO_for_DMQC_2017V02.mat';
+    lo_system_configuration.CONFIG_WMO_BOXES='wmo_boxes_CTD_for_DMQC_ARGO_for_DMQC.mat';
     lo_system_configuration.MAPSCALE_AGE='5';
     fprintf('>>>>> OW working on %s, %s \n',flt_name,datestr(now));
     update_salinity_mapping(flt_dir,flt_name,lo_system_configuration);
@@ -153,13 +152,12 @@ for i1=1:length(floats)
         close all
     end
     
-    
     %D Argo and CTD
     lo_system_configuration.ANALYSIS_CODE='D';
     lo_system_configuration.FLOAT_MAPPED_PREFIX='map_D_';
     lo_system_configuration.FLOAT_CALIB_PREFIX='cal_D_';
     lo_system_configuration.FLOAT_CALSERIES_PREFIX='calseries_D_';
-    lo_system_configuration.CONFIG_WMO_BOXES='wmo_boxes_CTD_for_DMQC_2014V01_ARGO_for_DMQC_2017V02.mat';
+    lo_system_configuration.CONFIG_WMO_BOXES='wmo_boxes_CTD_for_DMQC_ARGO_for_DMQC.mat';
     lo_system_configuration.MAPSCALE_AGE='10';
     fprintf('>>>>> OW working on %s, %s \n',flt_name,datestr(now));
     update_salinity_mapping(flt_dir,flt_name,lo_system_configuration);

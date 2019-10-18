@@ -9,7 +9,7 @@
 % Vamos a poner los datos de las boyas en formato matricial
 % para ser utilizados en el software OW de DMQC
 Limpia
-floats=[1900379];
+floats=[6901238];
 
 for i1 = 1:length(floats)
     flnameIn=fullfile(GlobalSU.ArgoDMQC,'Data','DMCell_Thermal_Mass_Error',sprintf('%6d.mat',floats(i1)));
