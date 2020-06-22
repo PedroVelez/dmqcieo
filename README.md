@@ -1,6 +1,6 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Delayed mode quality control (DMQC) for the Argo floats of the spanish contribution to Argo.
 
 ### What is this repository for? ###
 
